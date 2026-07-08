@@ -49,8 +49,7 @@ mlflow.set_experiment(EXPERIMENT_NAME)
 MODEL_CONFIGS = [
     {
         "name": "Logistic Regression",
-        "model": LogisticRegression(max_iter=1000, random_state=42,
-                                     multi_class="multinomial", solver="lbfgs"),
+        "model": LogisticRegression(max_iter=1000, random_state=42, solver="lbfgs"),
         "params": {"C": 1.0, "solver": "lbfgs", "max_iter": 1000},
         "log_fn": mlflow.sklearn.log_model,
         "artifact_path": "logistic_regression",

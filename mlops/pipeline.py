@@ -142,7 +142,7 @@ def split_and_balance(X, y):
 # ── Step 5: Train & Evaluate Models ───────────────────────────────────────
 MODELS = {
     "logistic_regression": LogisticRegression(
-        max_iter=1000, random_state=42, multi_class="multinomial", solver="lbfgs"
+        max_iter=1000, random_state=42, solver="lbfgs"
     ),
     "random_forest": RandomForestClassifier(
         n_estimators=200, max_depth=20, random_state=42, n_jobs=-1
